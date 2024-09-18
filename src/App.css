@@ -30,7 +30,7 @@
 }
 
 .todo-list .add-task {
-  height: 50px;
+  height: 40px;
   width: 70px;
 }
 .todo-list input {
@@ -48,25 +48,16 @@
 .textarea {
   display: block;
   width: 100%;
-  overflow: hidden;
   resize: both;
   min-height: 40px;
-  min-width: 200px;
+  min-width: 250px;
   line-height: 20px;
   border: 1px solid #ccc;
-  font-family: inherit;
-  font-size: inherit;
   padding: 1px 6px;
-}
-
-.textarea[contenteditable]:empty::before {
-  content: "Add new task";
-    color: gray;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #303030;
   padding: 10px 20px;
@@ -104,13 +95,13 @@ section {
     max-width: none;
   }
   .todo-list .add-task {
-      height: 50px;
-      width: 100px;
+      height: 40px;
+      width: 50px;
     }
 
   .textarea {
-    min-height: 30px;
-    min-width: 120px;
+    min-height: 40px;
+    min-width: 180px;
   }
 
   .navbar-brand h1 {
@@ -131,4 +122,3 @@ section {
     font-size: 12px;
   }
 }
-
