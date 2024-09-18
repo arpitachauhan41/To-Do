@@ -47,10 +47,9 @@
 
 .textarea {
   display: block;
-  width: 100%;
+  width: 25%;
   resize: both;
   min-height: 40px;
-  min-width: 250px;
   line-height: 20px;
   border: 1px solid #ccc;
   padding: 1px 6px;
