@@ -1,0 +1,134 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 5px 0;
+}
+
+.todo-item button {
+  margin-left: 10px;
+}
+
+.todo-item .delete {
+  padding: 8px;
+  margin: 10px 0;
+  width: 6%;
+  max-width: none;
+}
+
+.todo-list .add-task {
+  height: 50px;
+  width: 70px;
+}
+.todo-list input {
+  width: 20px;
+  height: 20px;
+}
+
+.todo-item p {
+  color: #000000;
+}
+.todo-item.completed p {
+  text-decoration: line-through;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  min-width: 200px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1px 6px;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: "Add new task";
+    color: gray;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #303030;
+  padding: 10px 20px;
+}
+
+.navbar-brand h1 {
+  color: white;
+  margin-left: 12px;
+  font-size: 24px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #333;
+}
+
+section {
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .todo-item {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+.todo-item .delete {
+    padding: 8px;
+    margin: 5px 0;
+    width: 12%;
+    max-width: none;
+  }
+  .todo-list .add-task {
+      height: 50px;
+      width: 100px;
+    }
+
+  .textarea {
+    min-height: 30px;
+    min-width: 120px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .navbar-brand h1 {
+    font-size: 18px;
+  }
+  .todo-item {
+    font-size: 12px;
+  }
+}
+
